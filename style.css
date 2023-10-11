@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(IntegralCF-ExtraBold.otf);
+}
+
+html{
+    background-color: darkviolet;
+    padding-block: 1rem;
+}
+h1{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-family: myFirstFont;
+}
+.container{
+    width: 100%;
+}
+#head{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+#btn{
+    width: 22%;
+    height: 3rem;
+    background-color: limegreen;
+    color: black;
+    text-transform: capitalize;
+    font-size: 1.75rem;
+    font-family: 'Pixelify Sans', sans-serif;
+    position: relative;
+    left: 40%;
+    cursor: pointer;
+    /* border: 2px solid white; */
+    box-shadow: 0px 0px 2px 2px white;
+    border-radius: 1.5rem;
+    transition: 0.5s ease-in;
+    margin-block: 1rem;
+}
+#btn:hover{
+    transform: scale(1.02);
+}
+.image-output{
+    height: 60vh;
+    width: 50%;
+    border: 2px solid white;
+    box-shadow: 0px 0px 2px 2px white;
+    margin-inline: 25%;
+    box-sizing: border-box;
+    margin-block: 2rem;
+    border-radius: 2rem;
+}
+.image-output img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+@media (min-width : 768px) and (max-width : 1024px) {
+    #btn{
+        width: 30%;
+        left: 35%;
+    }
+}
+@media (min-width : 481px) and (max-width : 767px){
+    #btn{
+        width: 30%;
+        left: 35%;
+        height: 4.2rem;
+        font-size: 1.4rem;
+    }
+    .image-output{
+        width: 60%;
+        margin-inline: 20%;
+    }
+}
+@media (min-width : 330px) and (max-width : 480px) {
+    #btn{
+        width: 40%;
+    left: 30%;
+    height: 2rem;
+    font-size: 1rem;
+    }
+    .image-output{
+        width: 90%;
+        margin-inline: 5%;
+    }
+}
